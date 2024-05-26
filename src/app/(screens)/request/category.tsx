@@ -4,7 +4,8 @@ import { Avatar, Button, Card } from "react-native-paper";
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { Ionicons } from "@expo/vector-icons";
 import { useRouter, useNavigation, Link } from "expo-router";
-
+import { FaMotorcycle } from "react-icons/fa"
+import { TbPackageExport } from "react-icons/tb"
 
 export default function category() {
   const router = useRouter();
@@ -12,14 +13,16 @@ export default function category() {
     return (
         <View style={{ flex: 1, backgroundColor: 'black' , alignItems: 'center', justifyContent: 'center'}}>
           <View style={{ alignSelf:'baseline', display: 'flex' , backgroundColor:"white", marginTop:-500, marginLeft: 60, borderRadius:50, zIndex: 1 }} >
-           <MaterialCommunityIcons onPress={() => router.back()} style={{  elevation:10, zIndex: 1, display: 'flex' }} name='arrow-left' size={50} color="black" position="absolute" top="55%" alignSelf="left" pandding="10" />
+            <Link href={'/'}>
+           <MaterialCommunityIcons style={{  elevation:10, zIndex: 1, display: 'flex' }} name='arrow-left' size={50} color="black" position="absolute" top="55%" alignSelf="left" pandding="10" />
+           </Link>
            </View>
           <BottomSheet isOpen sliderMinHeight={'255'}>
           <ScrollView showsHorizontalScrollIndicator={false} contentInsetAdjustmentBehavior="automatic" style={{ marginBottom: 30 }}>
             <Text style={{ fontSize: 18, fontWeight: 'bold' }}>Popular</Text>
             <Card style={{ margin: 10 }}>
             <Card.Content>
-            <Text style={{ fontWeight: 'bold', textAlign: 'center'}}>ON MOTO</Text>
+            <FaMotorcycle size={40} /><Text style={{ fontWeight: 'bold', textAlign: 'center' , fontSize: 25, marginTop: -25 }}>ON MOTO</Text><Text style={{ marginTop: -20, alignSelf:'flex-end', fontSize: 12 , marginRight: 50}}>BRL</Text><Text style={{ marginTop: -25, alignSelf: 'flex-end', fontWeight: 'bold', textAlign: 'center', fontSize: 25}}>7,99</Text>
             </Card.Content>
             </Card>
             <Card style={{ margin: 10 }}>
@@ -30,7 +33,7 @@ export default function category() {
             <Text style={{ fontSize: 18, fontWeight: 'bold' }}>Delivery</Text>
             <Card style={{  margin: 10 }}>
             <Card.Content>
-              <Text style={{ fontWeight: 'bold', textAlign: 'center'}}>ON DELIVERY</Text>
+            <TbPackageExport size={40} /><Text style={{ fontWeight: 'bold', textAlign: 'center', fontSize: 20, marginEnd: 40, marginTop: -25 }}>ON DELIVERY</Text><Text style={{ marginTop: -20, alignSelf:'flex-end', fontSize: 12 , marginRight: 50}}>BRL</Text><Text style={{ marginTop: -25, alignSelf: 'flex-end', fontWeight: 'bold', textAlign: 'center', fontSize: 25}}>5,99</Text>
             </Card.Content>
             </Card>
             </ScrollView>
