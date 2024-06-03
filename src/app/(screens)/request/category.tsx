@@ -4,8 +4,8 @@ import { Avatar, Button, Card } from "react-native-paper";
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { Ionicons } from "@expo/vector-icons";
 import { useRouter, useNavigation, Link } from "expo-router";
-import { FaMotorcycle } from "react-icons/fa"
-import { TbPackageExport } from "react-icons/tb"
+import  FontAwesome  from "@expo/vector-icons/FontAwesome";
+import Octicons  from "@expo/vector-icons/Octicons";
 
 export default function category() {
   const router = useRouter();
@@ -22,7 +22,7 @@ export default function category() {
             <Text style={{ fontSize: 18, fontWeight: 'bold' }}>Popular</Text>
             <Card style={{ margin: 10 }}>
             <Card.Content>
-            <FaMotorcycle size={40} /><Text style={{ fontWeight: 'bold', textAlign: 'center' , fontSize: 25, marginTop: -25 }}>ON MOTO</Text><Text style={{ marginTop: -20, alignSelf:'flex-end', fontSize: 12 , marginRight: 50}}>BRL</Text><Text style={{ marginTop: -25, alignSelf: 'flex-end', fontWeight: 'bold', textAlign: 'center', fontSize: 25}}>7,99</Text>
+            <FontAwesome size={40} name='motorcycle' color="black"/><Text style={{ fontWeight: 'bold', textAlign: 'center' , fontSize: 25, marginTop: -25 }}>ON MOTO</Text><Text style={{ marginTop: -20, alignSelf:'flex-end', fontSize: 12 , marginRight: 50}}>BRL</Text><Text style={{ marginTop: -25, alignSelf: 'flex-end', fontWeight: 'bold', textAlign: 'center', fontSize: 25}}>7,99</Text>
             </Card.Content>
             </Card>
             <Card style={{ margin: 10 }}>
@@ -33,20 +33,12 @@ export default function category() {
             <Text style={{ fontSize: 18, fontWeight: 'bold' }}>Delivery</Text>
             <Card style={{  margin: 10 }}>
             <Card.Content>
-            <TbPackageExport size={40} /><Text style={{ fontWeight: 'bold', textAlign: 'center', fontSize: 20, marginEnd: 40, marginTop: -25 }}>ON DELIVERY</Text><Text style={{ marginTop: -20, alignSelf:'flex-end', fontSize: 12 , marginRight: 50}}>BRL</Text><Text style={{ marginTop: -25, alignSelf: 'flex-end', fontWeight: 'bold', textAlign: 'center', fontSize: 25}}>5,99</Text>
+            <Octicons name="package-dependents" size={40} color="black"/><Text style={{ fontWeight: 'bold', textAlign: 'center', fontSize: 20, marginEnd: 40, marginTop: -25 }}><Link href={"/request/seach"}>ON DELIVERY</Link></Text><Text style={{ marginTop: -20, alignSelf:'flex-end', fontSize: 12 , marginRight: 50}}>BRL</Text><Text style={{ marginTop: -25, alignSelf: 'flex-end', fontWeight: 'bold', textAlign: 'center', fontSize: 25}}>5,99</Text>
             </Card.Content>
             </Card>
             </ScrollView>
             </BottomSheet>
         </View>
     );
-}
+};
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#000',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-});
