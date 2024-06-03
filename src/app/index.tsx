@@ -1,6 +1,6 @@
 import { useNavigation, useRouter, Link } from "expo-router";
 import React, { useEffect } from "react";
-import { Dimensions, StyleSheet, Text, View, SafeAreaView, Image, KeyboardAvoidingView, TextInput, Pressable, } from "react-native";
+import { ActivityIndicator, Dimensions, StyleSheet, Text, View, SafeAreaView, Image, KeyboardAvoidingView, TextInput, Pressable, } from "react-native";
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
@@ -11,6 +11,8 @@ import { APIProvider, Map, Marker, useMarkerRef } from '@vis.gl/react-google-map
 import { DrawerContent, DrawerContentScrollView, DrawerItem, DrawerItemList } from "@react-navigation/drawer";
 import BottomSheet from 'react-native-simple-bottom-sheet';
 import { flow, wrap } from "lodash";
+import { AuthProviver } from '@/context/AuthContext';
+
 
 const Drawer = createDrawerNavigator();
 const Stack = createStackNavigator();
@@ -38,7 +40,7 @@ function Content() {
   return (
     <View className="flex-1" style={{ width: SCREEN_WIDTH, height: SCREEN_HEIGHT, flex: 1 }}>
       <View style={{ marginTop: -30, width: SCREEN_WIDTH, height: SCREEN_HEIGHT }}>
-      
+      <ActivityIndicator style={{ marginTop: 100 }} size={"large"}/>
         </View>
       
          <BottomSheet isOpen >
@@ -62,6 +64,7 @@ function Content() {
 function MainDrawer() {
       return (
         <NavigationContainer ref={Root} independent={false}>
+          <AuthProvider>
           <Stack.Navigator>
                 <Drawer.Navigator drawerContent={CustomDrawerContent}
                 screenOptions={{
@@ -75,6 +78,7 @@ function MainDrawer() {
                     
                 </Drawer.Navigator>
                 </Stack.Navigator>
+                </AuthProvider>
         </NavigationContainer>
       );
 };
