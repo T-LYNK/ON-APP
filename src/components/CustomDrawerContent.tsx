@@ -19,9 +19,7 @@ export default function CustomDrawerContent(props) {
             </Text>
             </View>
         </DrawerContentScrollView>
-        <View style={{ borderTopColor: '#dde3fe', borderTopWidth: 1, padding: 20, paddingBottom: 20 + bottom }}>
-            <Link href={"/(screens)/auth"} style={{ fontSize:25, fontWeight:"bold" }}><Ionicons name="power" size={25} /> Logout </Link>
-        </View>
+
         </View>
     );
 }
