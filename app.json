@@ -50,10 +50,6 @@
       "router": {
         "origin": "https://n"
       },
-      "eas": {
-        "projectId": "73e4fd0e-a8c9-446d-a045-6be2870150b8"
-      }
-    },
     "runtimeVersion": {
       "policy": "appVersion"
     }
