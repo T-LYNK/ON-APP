@@ -1,6 +1,6 @@
 # ON APP MOBILIDADE :blue_car:
 
-![LOGO ON - MOBILIDADE ](https://on-panel.vercel.app/images/logotipo-black.png)
+![LOGO ON - MOBILIDADE ](https://on-application.vercel.app/images/logotipo-black.png)
 
 ## Expo Router and Tailwind CSS
 
