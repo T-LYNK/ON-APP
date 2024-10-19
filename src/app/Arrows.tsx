@@ -18,7 +18,7 @@ export default function Arrows() {
           <Text variant="titleLarge">Card title</Text>
           <Text variant="bodyMedium">Card content</Text>
         </Card.Content>
-        <Card.Cover source={{ uri: "https://on-panel.vercel.app/images/adaptive-icon.png" }} style={styles.img} />
+        <Card.Cover source={{ uri: "https://on-application.vercel.app/images/adaptive-icon.png" }} style={styles.img} />
         <Card.Actions>
           <Button>Cancel</Button>
           <Button style={{ backgroundColor: "blue" }}>Ok</Button>
@@ -35,7 +35,7 @@ export default function Arrows() {
           <Text variant="titleLarge">Card title</Text>
           <Text variant="bodyMedium">Card content</Text>
         </Card.Content>
-        <Card.Cover source={{ uri: "https://on-panel.vercel.app/images/adaptive-icon.png" }} style={styles.img} />
+        <Card.Cover source={{ uri: "https://on-apllication.vercel.app/images/adaptive-icon.png" }} style={styles.img} />
         <Card.Actions>
           <Button>Cancel</Button>
           <Button style={{ backgroundColor: "blue" }} >Ok</Button>
@@ -53,7 +53,7 @@ export default function Arrows() {
           <Text variant="titleLarge">Card title</Text>
           <Text variant="bodyMedium">Card content</Text>
         </Card.Content>
-        <Card.Cover source={{ uri: "https://on-panel.vercel.app/images/adaptive-icon.png" }} style={styles.img} />
+        <Card.Cover source={{ uri: "https://on-application.vercel.app/images/adaptive-icon.png" }} style={styles.img} />
         <Card.Actions>
           <Button>Cancel</Button>
           <Button style={{ backgroundColor: "blue" }} >Ok</Button>
@@ -71,7 +71,7 @@ export default function Arrows() {
           <Text variant="titleLarge">Card title</Text>
           <Text variant="bodyMedium">Card content</Text>
         </Card.Content>
-        <Card.Cover source={{ uri: "https://on-panel.vercel.app/images/adaptive-icon.png" }} style={styles.img} />
+        <Card.Cover source={{ uri: "https://on-applciation.vercel.app/images/adaptive-icon.png" }} style={styles.img} />
         <Card.Actions>
           <Button>Cancel</Button>
           <Button style={{ backgroundColor: "blue" }} >Ok</Button>
