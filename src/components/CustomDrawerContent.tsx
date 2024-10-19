@@ -13,7 +13,7 @@ export default function CustomDrawerContent(props) {
         <View style={{ flex: 1 }}>
         <DrawerContentScrollView  {...props} scrollEnabled={false} >
             <View style={{ padding: 10, justifyContent: 'center', alignItems: 'center', alignSelf: 'center' }}>
-            <Image source={{ uri: 'https://on-panel.vercel.app/images/default-blue.png' }} style={{ paddingTop: 50, justifyContent: 'center', alignItems: 'center', borderRadius: 100, width: 80, height: 80,  }} />
+            <Image source={{ uri: 'https://on-application.vercel.app/images/default-blue.png' }} style={{ paddingTop: 50, justifyContent: 'center', alignItems: 'center', borderRadius: 100, width: 80, height: 80,  }} />
             <Text style={{ padding: 0,  alignSelf: 'center', fontWeight: 'bold', fontSize: 25, paddingTop: 0, color: 'black' }}>
             UserName
             </Text>
