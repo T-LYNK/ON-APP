@@ -2,17 +2,13 @@
   "expo": {
     "scheme": "acme",
     "userInterfaceStyle": "automatic",
-    "version": "1.0.0",
+    "version": "9.9.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#000000"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0,
-      "url": "https://u.expo.dev/73e4fd0e-a8c9-446d-a045-6be2870150b8"
     },
     "assetBundlePatterns": [
       "**/*"
