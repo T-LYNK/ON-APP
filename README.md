@@ -1,4 +1,4 @@
-# ON APP MOBILIDADE :blue_car:
+# ON APP  :blue_car:
 
 ![LOGO ON - MOBILIDADE ](https://on-application.vercel.app/images/logotipo-black.png)
 
