@@ -6,7 +6,7 @@
 
 Use [Expo Router](https://docs.expo.dev/router/introduction/) with [Nativewind](https://www.nativewind.dev/v4/overview/) styling.
 
-## 🚀 How to use example expo app
+## 🚀 How to use example on expo app
 
 ```sh
 npx create-expo-app
