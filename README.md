@@ -1,6 +1,11 @@
 # ON APP  :blue_car:
 
  [ON-APPLICATION](https://on-application.vercel.app) 
+
+ # RELEASES
+
+ [DOWNLOAD APK](https://on-application.vercel.app) 
+
  
 ## Expo and Tailwind CSS
 
