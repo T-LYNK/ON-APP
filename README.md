@@ -4,7 +4,7 @@
 
  # RELEASES
 
- [DOWNLOAD APK](https://on-application.vercel.app) 
+ [DOWNLOAD APK](https://github.com/T-LYNK/ON-APP/releases/tag/ON-APP) 
 
  
 ## Expo and Tailwind CSS
