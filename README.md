@@ -4,7 +4,7 @@
 
  # RELEASES
 
- [DOWNLOAD APK](https://github.com/T-LYNK/ON-APP/releases/tag/ON-APP) 
+ [DOWNLOAD APK](https://github.com/T-LYNK/ON-APP/releases/download/ON-APP/on.apk) 
 
  
 ## Expo and Tailwind CSS
